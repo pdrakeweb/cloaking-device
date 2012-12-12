@@ -1,5 +1,6 @@
 {
     "name": "allplayers/cloaking-device",
+    "type": "library",
     "description": "Object cloaking classes.",
     "autoload": {
         "psr-0": {
