@@ -1,7 +1,7 @@
 {
   "name": "allplayers/cloaking-device",
   "autoload": {
-    "psr-0": { "CloakingDevice": "" }
+    "psr-0": { "CloakingDevice": "src/" }
   },
   "target-dir": "CloakingDevice",
   "require":{
