@@ -9,6 +9,7 @@
 Namespace CloakingDevice\Drupal;
 
 use CloakingDevice\Cloak as Cloak;
+use \stdClass;
 
 class GroupNode extends Cloak {
 

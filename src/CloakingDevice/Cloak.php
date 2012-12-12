@@ -8,6 +8,8 @@
 
 Namespace CloakingDevice;
 
+use \stdClass;
+
 class Cloak extends stdClass {
 
   /**
