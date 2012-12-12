@@ -1,0 +1,10 @@
+{
+  "name": "allplayers/cloaking-device",
+  "autoload": {
+    "psr-0": { "CloakingDevice": "" }
+  },
+  "target-dir": "CloakingDevice",
+  "require":{
+    "php":">=5.3.0",
+  },
+}
