@@ -1,10 +1,12 @@
 {
-  "name": "allplayers/cloaking-device",
-  "autoload": {
-    "psr-0": { "CloakingDevice": "src/" }
-  },
-  "target-dir": "CloakingDevice",
-  "require":{
-    "php":">=5.3.0"
-  }
+    "name": "allplayers/cloaking-device",
+    "description": "Object cloaking classes.",
+    "autoload": {
+        "psr-0": {
+            "CloakingDevice": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.2",
+    },
 }
