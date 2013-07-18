@@ -13,7 +13,8 @@ class GroupContent extends NodeCloak implements \Serializable
      * @return string
      *     The serialized string.
      */
-    public function serialize() {
+    public function serialize()
+    {
         unset($this->object->og_groups);
         unset($this->object->og_groups_both);
         return serialize($this->object);
@@ -25,7 +26,8 @@ class GroupContent extends NodeCloak implements \Serializable
      * @param mixed $data
      *    The data to unserialize.
      */
-    public function unserialize($data) {
+    public function unserialize($data)
+    {
         $this->object = unserialize($data);
     }
 
@@ -33,7 +35,8 @@ class GroupContent extends NodeCloak implements \Serializable
      * Override the getData method for this object.
      * @return type
      */
-    public function getData() {
+    public function getData()
+    {
         return $this->object;
     }
 
