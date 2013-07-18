@@ -36,7 +36,7 @@ class Cloak extends stdClass
      */
     public function __construct()
     {
-          $this->object = new stdClass();
+        $this->object = new stdClass();
     }
 
     /**

@@ -1,25 +1,11 @@
 <?php
 namespace CloakingDevice\Drupal;
 
-use CloakingDevice\Cloak as Cloak;
-use stdClass;
-
 /**
  * Provides an on-demand group node object injector.
  */
-class GroupNode extends Cloak
+class GroupNode extends NodeCloak
 {
-
-    /**
-     * Build the node object.
-     *
-     * @param integer $nid
-     */
-    public function __construct($nid)
-    {
-        $this->object = new stdClass();
-        $this->object->nid = $nid;
-    }
 
     /**
      * Implementation of the magic __get method.
@@ -51,14 +37,5 @@ class GroupNode extends Cloak
         } else {
             return $this->_null_value;
         }
-    }
-
-    /**
-     * Helper function to load the node object.
-     */
-    protected function load()
-    {
-        $this->object = node_load($this->object->nid);
-        $this->loaded = true;
     }
 }
