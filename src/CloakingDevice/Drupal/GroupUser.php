@@ -62,10 +62,6 @@ class GroupUser extends UserCloak implements \Serializable
         }
 
         // Return the property.
-        if (isset($this->object->$requested_property)) {
-            return $this->object->$requested_property;
-        } else {
-            return $this->_null_value;
-        }
+        return $this->object->$requested_property;
     }
 }
