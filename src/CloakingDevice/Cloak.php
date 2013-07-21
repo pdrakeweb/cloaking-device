@@ -36,7 +36,7 @@ class Cloak extends stdClass
      */
     public function __construct()
     {
-          $this->object = new stdClass();
+        $this->object = new stdClass();
     }
 
     /**
@@ -53,11 +53,7 @@ class Cloak extends stdClass
             $this->load();
         }
 
-        if (isset($this->object->$requested_property)) {
-            return $this->object->$requested_property;
-        } else {
-            return $this->_null_value;
-        }
+        return $this->object->$requested_property;
     }
 
     /**
